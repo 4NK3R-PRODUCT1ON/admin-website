@@ -47,7 +47,7 @@ foreach($lists as $login){
 		fwrite($handle, "$log\n");
 		print "\x1b[31;1m\n\n [".date('H:m:s')."] Mencoba : $log => Ditemukan\n";
 	}else{
-		print "\n[".date('H:m:s')."] Mencoba : $log => tidak di temukan";
+		print "\x1b[93m\n[".date('H:m:s')."] Mencoba : $log => tidak di temukan";
 	}
 }
   
